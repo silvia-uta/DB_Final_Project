@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MuseumDetail">
+
+    <TextView
+        android:id="@+id/treasure_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="MuseumName"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/era_textview"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="1600 campus road, Eagle Rock, Los Angeles, California, 90041"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_textview" />
+
+    <TextView
+        android:id="@+id/category_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="1899"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treasure_name_textview" />
+
+    <Button
+        android:id="@+id/seeAll_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#F44336"
+        android:fontFamily="casual"
+        android:text="Search More Treasures"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c3_textview" />
+
+    <TextView
+        android:id="@+id/c1_textview"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="centerpiece1"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/something" />
+
+    <TextView
+        android:id="@+id/c2_textview"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="centerpiece2"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1_textview" />
+
+    <TextView
+        android:id="@+id/c3_textview"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="centerpiece3"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c2_textview" />
+
+    <TextView
+        android:id="@+id/something"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CENTERPIECES"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descript_scrollview" />
+
+    <Button
+        android:id="@+id/treasure_site_btn"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#F44336"
+        android:fontFamily="casual"
+        android:text="Go To Offical Website"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/era_textview" />
+
+    <ScrollView
+        android:id="@+id/descript_scrollview"
+        android:layout_width="349dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treasure_site_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/descript_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="8sp"
+                android:text="Established in 1925, the Palace Museum is located in the imperial palace of the consecutive Ming (1368-1644) and Qing (1644-1911) dynasties. The magnificent architectural complex, also known as the Forbidden City, and the vast holdings of paintings, calligraphy, ceramics, and antiquities of the imperial collections make it one of the most prestigious museums in China and the world. In 1961, the State Council designated the former imperial residence as one of China's foremost-protected cultural heritage sites, and in 1987 it was listed as a UNESCO World Heritage site."
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

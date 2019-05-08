@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a1008.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Treasures"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        <activity android:name="com.example.a1008.test.ListTreasures" />
+        <activity android:name="com.example.a1008.test.AddToList" />
+        <activity android:name="com.example.a1008.test.NewList" />
+        <activity android:name="com.example.a1008.test.MyList" />
+        <activity android:name="com.example.a1008.test.SearchResult" />
+        <activity android:name="com.example.a1008.test.SearchFilter" />
+        <activity android:name="com.example.a1008.test.TreasureDetail" />
+        <activity android:name="com.example.a1008.test.MuseumDetail" />
+        <activity android:name="com.example.a1008.test.MyMuseum" />
+        <activity android:name="com.example.a1008.test.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>
